@@ -46,7 +46,7 @@ bot.on('message', (msg) => {
                 bot.sendMessage(
                         msg.chat.id,
                         `nilai pompa yang diprediksi adalah ${jres1[0]}`
-                })
+                );
                 bot.sendMessage(
                         msg.chat.id,
                         `nilai pompa yang diprediksi adalah ${jres1[1]}`
