@@ -15,7 +15,7 @@ bot.onText(/\/start/, (msg) => {
     bot.sendMessage(
         msg.chat.id,
         `hello ${msg.chat.first_name}, welcome...\n
-        Selamat datang di bot islahuddin
+        Selamat datang di TA islahuddin
         click /predict`
     );   
 });
@@ -44,12 +44,12 @@ bot.on('message', (msg) => {
             console.log(jres);
             bot.sendMessage(
                 msg.chat.id,
-                `nilai v yang diprediksi adalah ${jres [0]} volt `
+                `nilai pompa yang diprediksi adalah ${jres [0]} `
                 
             ); 
             bot.sendMessage(
                 msg.chat.id,
-                `nilai p yang diprediksi adalah ${jres [1]} watt `
+                `nilai kipas yang diprediksi adalah ${jres [1]} `
             );
         })
     }else{
