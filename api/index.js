@@ -49,7 +49,7 @@ bot.on('message', (msg) => {
                 );
                 bot.sendMessage(
                         msg.chat.id,
-                        `nilai pompa yang diprediksi adalah ${jres1[1]}`
+                        `nilai kipas yang diprediksi adalah ${jres1[1]}`
                 ); 
                 bot.sendMessage(
                         msg.chat.id,
