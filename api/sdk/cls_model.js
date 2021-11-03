@@ -20,11 +20,11 @@ function ArgMax(res){
     console.log(cls_data, argMax(cls_data));
     
     if(argMax(cls_data) == 1){
-        label = "POMPA ON KIPAS OFF"
+        label = "1|0" //POMPA ON KIPAS OFF
     }if(argMax(cls_data) == 0){
-        label = "POMPA OFF KIPAS OFF"
+        label = "0|0" //POMPA OFF KIPAS OFF
     }if(argMax(cls_data) == 2){
-        label = "POMPA ON KIPAS ON"
+        label = "1|1"//POMPA ON KIPAS ON
     }
     return label
 }
