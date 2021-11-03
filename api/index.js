@@ -94,6 +94,23 @@ r.get('/classify/:S/:K', function(req, res, next) {
                 parseFloat(jres[1])
             ]
         ).then((jres_)=>{
+            let status = "";
+            
+            if(jres_ == "1|1"){
+                status = "POMPA ON KIPAS ON"
+            }if(jres_ == "1|0"){
+                status = "POMPA ON KIPAS OFF"
+            }if(jres_ == "0|0"){
+                status = "POMPA OFF KIPAS OFF"
+            }
+            
+//             jres_.split("|");
+            
+            bot.sendMessage(
+                    1599833896, //msg.id
+                    `STATUS:: ${status}`
+            ); // to telegram
+            
             res.json({jres, jres_})
         })
     })
