@@ -12,7 +12,7 @@ const argFact = (compareFn) => (array) => array.map((el, idx) => [el, idx]). red
 const argMax = argFact((min, el) => (el[0] > min[0] ? el : min ))
 
 function ArgMax(res){
-    label = "0|1 POMPA OFF KIPAS ON"
+    label = "0|1" //POMPA OFF KIPAS ON
     cls_data = []
     for(i=0; i<res.length; i++){
         cls_data[i] = res[i]
@@ -20,11 +20,11 @@ function ArgMax(res){
     console.log(cls_data, argMax(cls_data));
     
     if(argMax(cls_data) == 1){
-        label = "1|0 POMPA ON KIPAS OFF" 
+        label = "1|0" //POMPA ON KIPAS OFF 
     }if(argMax(cls_data) == 0){
-        label = "0|0 POMPA OFF KIPAS OFF" 
+        label = "0|0" //POMPA OFF KIPAS OFF 
     }if(argMax(cls_data) == 2){
-        label = "1|1 POMPA ON KIPAS ON"
+        label = "1|1" //POMPA ON KIPAS ON
     }
     return label
 }
